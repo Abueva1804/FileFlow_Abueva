@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FileFlow</title>
+    <!-- IconScout css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- css -->
+    <link rel="stylesheet" href="/CSS/Main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class=title>Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="loginEmail" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="loginPassword" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" id="loginBtn" value="Login">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="tex">
+                        Don't have an account?
+                        <a href="#" class="text signup-link">Sign Up</a>
+                    </span>
+                </div>
+            </div>
+            <!-- registration form -->
+            <div class="form signup">
+                <span class=title>Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" class="password" placeholder="Create a password" required>
+                        <i class="uil uil-lock icon"></i>
+
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="confirmPassword" class="password" placeholder="Confirm a password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck">
+                            <label for="sigCheck" class="text">term and condition</label>
+                        </div>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" id="registerBtn" value="SignUp">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="tex">
+                        Already have an account?
+                        <a href="#" class="text login-link"> Login</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js"></script>
+    <script type="module" src="/JAVASCRIPT/Main.js"></script>
+    <script type="module" src="/JAVASCRIPT/Login.js"></script>
+    <script type="module" src="/JAVASCRIPT/Signup.js"></script>
+    <script type="module" src="/JAVASCRIPT/Firebase.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e; /* Dark gray background */
+    color: #f1f1f1; /* Light text color */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5; /* Dirty white header */
+    color: #2e2e2e;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  .logout-btn {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .action-btn, .back-btn {
+    background-color: #5bc0de;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .action-btn:hover {
+    background-color: #31b0d5;
+  }
+  
+  .back-btn:hover {
+    background-color: #269abc;
+  }
+  
+  .folder-item {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically center items */
+    gap: 12px; /* Add space between elements */
+    padding: 12px;
+    border: 1px solid #ccc; /* Subtle border for structure */
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Light gray background to match files */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.folder-item:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folder-icon {
+    width: 48px;
+    height: 42px;
+    border-radius: 5px; /* Rounded edges to match file design */
+}
+
+.folder-text {
+    font-size: 16px;
+    font-weight: 600; /* Make text stand out */
+    color: #2e2e2e; /* Darker text for better readability */
+}
+
+.folder-item .delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: auto; /* Align delete button to the right */
+    transition: background-color 0.2s ease;
+}
+
+.folder-item .delete-btn:hover {
+    background-color: #ff1a1a;
+}
+  
+  .upload-btn {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .upload-btn:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Delete button */
+.delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff1a1a;
+  }
+
+  .file-item {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Vertically center items */
+    gap: 10px; /* Add space between items */
+    padding: 10px;
+    border: 1px solid #ddd; /* Optional: for better structure */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add space between rows */
+    background-color: #f9f9f9; /* Optional: add a light background */
+  }
+  
+  .file-icon {
+    width: 50px;
+    height: 40px;
+    margin: 0; /* Remove extra margin */
+  }
+  
+  .file-link {
+    font-size: 14px;
+    color: #4567ee;
+    text-decoration: none; /* Optional: remove underline */
+    flex-grow: 1; /* Allow link to take up remaining space if needed */
+    word-wrap: break-word;
+  }
