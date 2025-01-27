@@ -41,7 +41,7 @@ document.getElementById('registerBtn').addEventListener('click', async (e) => {
         }
 
         // Redirect to login page
-        setTimeout(() => window.location.href = "Index.html", 500);
+        setTimeout(() => window.location.href = "index.html", 500);
     } catch (error) {
         if (messageElement) messageElement.textContent = error.message;
         console.error("Error during sign-up:", error);
